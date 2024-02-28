@@ -14,8 +14,6 @@ function mincost(arr)
 		arr.push(first+second);
 		arr.sort(function(a,b){return a-b;});
 	  }
-	}
-
 	return result;
 }
 
