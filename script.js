@@ -6,11 +6,15 @@ function mincost(arr)
 	  return a-b;
   });
 
+	let result = 0;
+	
 	while(arr.length > 1){
-		let sum = arr.shift() + arr.shift();
-		arr.push(sum);
-		arr = arr.sort(function(a,b){
-		  return a-b;
+		let first = arr.shift();
+		let second = arr.shift();
+
+		result += first + second;
+		arr.push(first+second);
+		arr.sort(function(a,b){return a-b;});
 	  });
 	}
 
