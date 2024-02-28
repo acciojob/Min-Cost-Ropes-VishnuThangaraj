@@ -18,7 +18,7 @@ function mincost(arr)
 	  });
 	}
 
-	return arr[0];
+	return result;
 }
 
 module.exports=mincost;
